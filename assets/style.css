@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: "AvertaStdFontReg";
+    src: url("./AvertaStd-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "AvertaStdFontBlack";
+    src: url('./AvertaStd-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+    font-family: "AvertaStdFontReg", sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #3b4653;
+    font-size: 1.3rem;
+  }
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    gap: 2rem;
+  }
+
+  /* Navigation */
+  header {
+    background-color: rgba(59, 70, 83, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+  }
+  nav a:hover {
+    color: #17e6a1;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 180px 0 50px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-family: 'AvertaStdFontBlack';
+    font-size: 6.5rem;
+    margin-bottom: 1rem;
+    /* line-height: normal; */
+    line-height: .9;
+    padding: 3rem;
+  }
+  .hero p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+  }
+
+  /* App Showcase */
+  .app-showcase {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    margin: 4rem;
+    padding-top: 4rem;
+  }
+  .app-screenshot {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    filter: drop-shadow(6px 6px 33px #000000);
+  }
+  /* Large central image */
+  .app-screenshot.large {
+    width: 300px; /* Larger size */
+    /* transform: translateY(-10px); */
+      transform:  scale(1.15);
+
+  }
+
+  /* Download Buttons */
+  .download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
+    padding: 4rem;
+  }
+  .download-buttons img {
+    width: 300px;
+  }
+
+  .download-button {
+    background-color:transparent;
+    padding: 2px 2px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 1rem;
+  }
+  .download-button:hover {
+    background-color: #14c589;
+    border-radius: 1rem;
+  }
+
+  /* FAQ Section */
+  .faq {
+    background-color: #2f3a45;
+    padding: 50px 0;
+  }
+  .faq h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .faq-item {
+    margin-bottom: 1rem;
+  }
+  .faq-question {
+    background-color: #3b4653;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .faq-answer {
+    background-color: #4b5a6a;
+    padding: 1rem;
+    display: none;
+  }
+
+  /* Contact Form */
+  .contact {
+    padding: 50px 0;
+  }
+  .contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .contact input,
+  .contact textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+  }
+  .contact button {
+    background-color: #17e6a1;
+    color: #3b4653;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .contact button:hover {
+    background-color: #14c589;
+  }
+
+  
+  /* Policy Section */
+  .privacy {
+    background-color: #2f3a45;
+    padding: 50px 0;
+  }
+  .privacy h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Policy Section */
+  .terms {
+    background-color: #2f3a45;
+    padding: 50px 0;
+  }
+  .terms h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+
+  /* Social Sidebar */
+  .social-sidebar {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .social-sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  .social-sidebar a:hover {
+    color: #17e6a1;
+  }
+
+
+  footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .app-showcase {
+      flex-direction: column;
+      align-items: center;
+    }
+    .download-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    .social-sidebar {
+      display: none;
+    }
+  }
