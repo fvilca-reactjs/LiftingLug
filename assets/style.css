@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
+
   @font-face {
     font-family: "AvertaStdFontReg";
     src: url("./AvertaStd-Regular.ttf") format("truetype");
@@ -32,7 +33,93 @@
   }
 
   /* Navigation */
-  header {
+
+  /* General Styles */
+header {
+  background-color: rgba(59, 70, 83, 0.9);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #17e6a1;
+}
+
+.logo img {
+  display: block;
+  max-width: 150px;
+}
+
+/* Desktop Layout */
+.menu-left,
+.menu-right {
+  display: flex;
+}
+
+.hamburger,
+.mobile-menu {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-left,
+  .menu-right {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(59, 70, 83, 1);
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .mobile-menu a {
+    margin: 10px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .mobile-menu a:hover {
+    color: #17e6a1;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+}
+
+
+  /* header {
     background-color: rgba(59, 70, 83, 0.9);
     position: fixed;
     width: 100%;
@@ -51,7 +138,8 @@
   }
   nav a:hover {
     color: #17e6a1;
-  }
+  } */
+
 
   /* Hero Section */
   .hero {
