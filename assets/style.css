@@ -220,7 +220,7 @@ nav a:hover {
   /* FAQ Section */
   .faq {
     background-color: #2f3a45;
-    padding: 50px 0;
+    padding: 100px 0;
   }
   .faq h2 {
     text-align: center;
@@ -242,7 +242,7 @@ nav a:hover {
 
   /* Contact Form */
   .contact {
-    padding: 50px 0;
+    padding: 100px 0;
   }
   .contact h2 {
     text-align: center;
@@ -278,7 +278,7 @@ nav a:hover {
   /* Policy Section */
   .privacy {
     background-color: #2f3a45;
-    padding: 50px 0;
+    padding: 100px 0;
   }
   .privacy h2 {
     text-align: center;
@@ -288,7 +288,7 @@ nav a:hover {
   /* Policy Section */
   .terms {
     background-color: #2f3a45;
-    padding: 50px 0;
+    padding: 100px 0;
   }
   .terms h2 {
     text-align: center;
