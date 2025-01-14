@@ -285,7 +285,7 @@ nav a:hover {
     margin-bottom: 2rem;
   }
   
-  /* Policy Section */
+  /* Terms Section */
   .terms {
     background-color: #2f3a45;
     padding: 100px 0;
@@ -295,6 +295,11 @@ nav a:hover {
     margin-bottom: 2rem;
   }
   
+  /* Subs Section */
+  .subs {
+    background-color: #2f3a45;
+    padding: 100px 0;
+  }
 
   /* Social Sidebar */
   .social-sidebar {
@@ -334,4 +339,8 @@ nav a:hover {
     .social-sidebar {
       display: none;
     }
+  }
+
+  .faq-subanswer {
+    margin-left: 20px;
   }
