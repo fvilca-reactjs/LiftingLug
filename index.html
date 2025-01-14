@@ -40,15 +40,19 @@
       <nav class="container">
         <div class="menu-left">
           <a href="#home">Home</a>
-          <a href="#faq">FAQ's</a>
+          <span>•</span>
           <a href="#contact">Contact</a>
+          <span>•</span><a href="#privacy">Privacy Policy</a>
         </div>
         <div class="logo">
           <img src="./assets/logo.png" alt=" Lifting lug BTH-1" width="150" />
         </div>
         <div class="menu-right">
-          <a href="#privacy">Privacy Policy</a>
           <a href="#terms">Terms of Use</a>
+          <span>•</span>
+          <a href="#subs">Subscription Terms</a>
+          <span>•</span>
+          <a href="#faq">FAQ's</a>
         </div>
         <!-- Hamburger Menu -->
         <button class="hamburger" onclick="toggleMenu()">☰</button>
@@ -59,6 +63,7 @@
           <a href="#contact" onclick="closeMenu()">Contact</a>
           <a href="#privacy" onclick="closeMenu()">Privacy Policy</a>
           <a href="#terms" onclick="closeMenu()">Terms of Use</a>
+          <a href="#subs" onclick="closeMenu()">Subscription Terms</a>
         </div>
       </nav>
     </header>
@@ -128,9 +133,9 @@
       <section id="contact" class="contact">
         <div class="container">
           <h2>Contact Us</h2>
-          <form id="contact-form">
-            <input type="email" placeholder="Your email" required />
-            <textarea placeholder="Your message" required></textarea>
+          <form id="contact-form" action="https://formsubmit.co/engineering@calctechsolutions.com" method="POST">
+            <input type="email" name="email" placeholder="Your email" required />
+            <textarea name="comments" placeholder="Your message" required></textarea>
             <button type="submit">Send Message</button>
           </form>
         </div>
@@ -246,9 +251,9 @@
               lifting lug. With a user-friendly and intuitive interface, the app
               allows users to manually input the dimensions and properties of
               the component, generating real-time calculations of the maximum
-              load capacity. By using this
-              application, you agree to these Terms of Use. If you do not agree
-              to them, please do not use this application.
+              load capacity. By using this application, you agree to these Terms
+              of Use. If you do not agree to them, please do not use this
+              application.
             </div>
           </div>
 
@@ -256,12 +261,12 @@
             <div class="faq-question">2. Purpose of the Application</div>
             <div class="faq-answer">
               The application is specifically designed to:<br />
-              
+
               - Calculate the strength and failure modes for the structural
               design of lifting lugs directly connected to loads.<br />
-              - Help engineers, technicians and professionals apply the guidelines of the ASME
-              BTH-1 standard for lifting loads in industrial or construction
-              environments.
+              - Help engineers, technicians and professionals apply the
+              guidelines of the ASME BTH-1 standard for lifting loads in
+              industrial or construction environments.
             </div>
           </div>
 
@@ -319,7 +324,9 @@
           <div class="faq-item">
             <div class="faq-question">7. Payments</div>
             <div class="faq-answer">
-              This application is free to download from the Play store and once installed may require additional payments if you opt for subscriptions within the application.
+              This application is free to download from the Play store and once
+              installed may require additional payments if you opt for
+              subscriptions within the application.
             </div>
           </div>
 
@@ -365,11 +372,135 @@
           </div>
         </div>
       </section>
+
+      <section id="subs" class="subs">
+        <div class="container">
+          <h2>Subscription Terms</h2>
+
+          <div class="faq-item">
+            <div class="faq-question">1. Plans and Pricing</div>
+            <div class="faq-answer">
+              <ul class="faq-subanswer">
+                <li><strong>Free Plan</strong>
+                  <ul class="faq-subanswer">
+                    <li>Access to basic features</li>
+                    <li>Includes advertisements</li>
+                    <li>No charge</li>
+                  </ul>
+                </li>
+                <li><strong>Monthly Premium Plan</strong>
+                  <ul class="faq-subanswer">
+                    <li>$20.00 USD per month</li>
+                    <li>Recurring monthly billing</li>
+                    <li>Full access to all features</li>
+                    <li>Ad-free experience</li>
+                  </ul>
+                </li>
+                <li><strong>Annual Premium Plan</strong>
+                  <ul class="faq-subanswer">
+                    <li>$100.00 USD per year</li>
+                    <li>Recurring annual billing</li>
+                    <li>Full access to all features</li>
+                    <li>Ad-free experience</li>
+                    <li>58% savings compared to monthly plan</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="faq-item">
+            <div class="faq-question">2. Trial Period</div>
+            <div class="faq-answer">
+              <ul class="faq-subanswer">
+                <li>30-day free trial for new subscribers</li>
+                <li>Full access to all premium features during the trial period</li>
+                <li>Valid payment method required to start the trial</li>
+                <li>Subscription will automatically begin at the end of the trial period unless cancelled</li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="faq-item">
+            <div class="faq-question">3. Payment Processing</div>
+            <div class="faq-answer">
+              <ul class="faq-subanswer">
+                <li>All payments are processed through Google Play</li>
+                <li>Accepted payment methods are those available in your Google Play account</li>
+                <li>Charges will appear on your statement as "Google Play"</li>
+                <li>Displayed prices do not include applicable taxes, which will be calculated and added based on your location</li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="faq-item">
+            <div class="faq-question">4. Automatic Renewal</div>
+            <div class="faq-answer">
+              <ul class="faq-subanswer">
+                <li>Subscriptions automatically renew at the end of each period</li>
+                <li>The charge will be made within 24 hours prior to the end of the current period</li>
+                <li>The charge amount will be the same as the previous period unless a price change is notified</li>
+                <li>An email notification will be sent before each renewal</li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="faq-item">
+            <div class="faq-question">5. Cancellation Policy</div>
+            <div class="faq-answer">
+              <ul class="faq-subanswer">
+                <li>You can cancel your subscription at any time</li>
+                <li>Cancellation can be performed directly through Google Play</li>
+                <li>Access to premium features will continue until the end of the current period</li>
+                <li>No partial refunds for unused periods</li>
+                <li>Cancellation during the trial period will prevent any charges</li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="faq-item">
+            <div class="faq-question">6. Refund Policy</div>
+            <div class="faq-answer">
+              <ul class="faq-subanswer">
+                <li>Refunds are handled according to Google Play policies</li>
+                <li>You can request a refund directly through Google Play within 48 hours of purchase</li>
+                <li>For requests after 48 hours, you must contact our customer service</li>
+                <li>Refund requests will be evaluated on a case-by-case basis</li>
+                <li>Approved refunds will be processed through the original payment method</li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="faq-item">
+            <div class="faq-question">7. Price and Terms Changes</div>
+            <div class="faq-answer">
+              <ul class="faq-subanswer">
+                <li>We reserve the right to modify subscription prices and terms</li>
+                <li>Any changes will be notified at least 30 days in advance</li>
+                <li>Price changes will not affect already paid billing periods</li>
+                <li>In case of price changes, you will have the option to cancel before the change takes effect</li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="faq-item">
+            <div class="faq-question">8. Contact</div>
+            <div class="faq-answer">
+              <p>For any questions about your subscription, you can contact us through:</p>
+              <ul class="faq-subanswer">
+                <li>Email: engineering@calctechsolutions.com
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </main>
     <footer>
       <div class="copyright">
         Copyright © 2024 <span> Lifting lug BTH-1 </span> Lug lifting Calculator
-        App, Diseñado por <a href="mailto:fvilca@gmail.com">@Fil</a>
+        App, Designed by <a href="mailto:fvilca@gmail.com">@Fil</a>
       </div>
     </footer>
 
